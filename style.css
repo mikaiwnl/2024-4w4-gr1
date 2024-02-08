@@ -12,11 +12,11 @@ Text Domain: theme-mika
 /* https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
  */
 :root {
-  --couleur-arriere-entete:#aaa;
-  --couleur-arriere-accueil: #0f0;
-  --couleur-arriere-evenement: #086;
-  --couleur-arriere-galerie: #045;
-  --couleur-arriere-footer: #630;
+  --couleur-arriere-entete:#000000;
+  --couleur-arriere-accueil: rgb(228, 14, 14);
+  --couleur-arriere-evenement: rgb(250, 142, 0);
+  --couleur-arriere-galerie: rgb(85, 226, 127);
+  --couleur-arriere-footer: rgb(103, 207, 214);
 }
 
 * {
@@ -27,16 +27,19 @@ Text Domain: theme-mika
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Prompt", sans-serif;
 }
 
 .global {
-  min-height: 100vh;
+  display: flex;
+  min-height: 40vh;
+  justify-content: center;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 900px;
   border: 1px solid #aaa;
 }
 
@@ -62,5 +65,9 @@ body {
 
 /*https://chrisburnell.com/*/
 h1 {
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+}
+
+h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
 }/*# sourceMappingURL=style.css.map */
