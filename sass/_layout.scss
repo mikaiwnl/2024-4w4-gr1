@@ -13,16 +13,32 @@ body{
 display: flex;
 min-height: 40vh;
 justify-content: center;
+
 }
 
 .global > section,
 .global > header,
 .global > footer{
     flex: 0 1 900px;
-    border: 1px solid #aaa;
-
+   // border: 1px solid #aaa;
+    padding: 3rem 1rem;
+    // background-color: rgba( 0,0,0,.1);
+    background-color: rgba( 255,255,255,var(--transparence-section));
 }
 
+.global >#header{
+    min-height: var(--largeur-header);
+}
+
+.global >#footer{
+    min-height: var(--largeur-footer);
+}
+.global > #section{
+    min-height: var(--largeur-section);
+}
+#entete , #footer{
+    min-height: 20vh;
+}
 #entete{
     background-color: var(--couleur-arriere-entete);
 }
