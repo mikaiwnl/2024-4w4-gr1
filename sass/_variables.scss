@@ -13,10 +13,10 @@
 
     //
     /*calcul des couleurs*/
-    --u1 :215; //couleur initial
+    --u1 :371; //couleur initial
     --u2 :calc(var(--u1) + 180); //couleur complementaire
     --u3 :calc(var(--u2) - 30); //couleur analogue gauche
-    --u4 :calc(var(--u2) + 30); //couleur analogue droite
+    --u4 :calc(var(--u1) + 30); //couleur analogue droite
 
     /* satruation luminosité */
     --s-arriere : 100%;
