@@ -1,9 +1,12 @@
-# labo #1
-## Introduction à  Sass et révision  de HTML/CSS
-- Un dossier Sass qui contient :
-    - un sous dossier base
-        - _h.scss
-        - _lien.scss
-    - style.scss
-- Création d'une pagination avec flexbox
-- utilisation de polices google-font_
+# labo#2
+# utilisation de la fonction hsl()
+## Itegration d'Effet vague diagnoal
+
+### reference hsl utiles
+
+## ce que vous devez faire
+
+### utiliser la fonction hsl()
+### integrer les vagues 
+### integrer une diagonal
+
