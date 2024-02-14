@@ -1,19 +1,44 @@
 :root{
-    --couleur-arriere-entete :#00ff55;
-    --couleur-arriere-accueil : rgb(46, 175, 85);
-    --couleur-arriere-evenement : rgb(90, 235, 155);
-    --couleur-arriere-galerie : rgb(155, 233, 197);
-    --couleur-arriere-footer : rgb(177, 132, 236);
 
-    /* niveau de transparence des h */
-    --transparence-h1 : 0.7;
-    --transparence-moyen : 0.5;
-    --transparence-peu : 0.7;
+    //  /* niveau de transparence des h */
+    // --transparence-h1 : 1;
+    // --transparence-moyen : 0.5;
+    // --transparence-peu : 0.7;
     // transparence des sections
-    --transparence-section : 0.1;
-    // largeur des section
-    --largeur-section : 90vw;
-    --largeur-header : 45vw;
-    --largeur-footer :25vw;
+    //  --transparence-section : 0.1;
+      // largeur des section
+      --largeur-section : 90vw;
+     --largeur-header : 45vw;
+      --largeur-footer :25vw;    
+
+    //
+    /*calcul des couleurs*/
+    --u1 :215; //couleur initial
+    --u2 :calc(var(--u1) + 180); //couleur complementaire
+    --u3 :calc(var(--u2) - 30); //couleur analogue gauche
+    --u4 :calc(var(--u2) + 30); //couleur analogue droite
+
+    /* satruation luminosité */
+    --s-arriere : 100%;
+    --s-avant : 50%;
+    --l--arriere : 50%;
+    --l-avant : 20%;
+  
+    /*  couleur arriere plan */
+   
+
+
+    --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l--arriere));
+    --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l--arriere));
+    --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere), var(--l--arriere));
+    --couleur-arriere-galerie : hsl(var(--u4), var(--s-arriere), var(--l--arriere));
+    --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l--arriere));
+    
+    /* couleur avant plan - color */
+        --couleur-entete : hsl(var(--u1), var(--s-avant), var(--l-avant));
+        --couleur-accueil : hsl(var(--u2), var(--s-avant), var(--l-avant));
+        --couleur-evenement : hsl(var(--u3), var(--s-avant), var(--l-avant));
+        --couleur-galerie : hsl(var(--u4), var(--s-avant), var(--l-avant));
+        --couleur-footer : hsl(var(--u1), var(--s-avant), var(--l-avant));
 }
 

@@ -12,19 +12,31 @@ Text Domain: theme-mika
 /* https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
  */
 :root {
-  --couleur-arriere-entete:#00ff55;
-  --couleur-arriere-accueil: rgb(46, 175, 85);
-  --couleur-arriere-evenement: rgb(90, 235, 155);
-  --couleur-arriere-galerie: rgb(155, 233, 197);
-  --couleur-arriere-footer: rgb(177, 132, 236);
-  /* niveau de transparence des h */
-  --transparence-h1: 0.7;
-  --transparence-moyen: 0.5;
-  --transparence-peu: 0.7;
-  --transparence-section: 0.1;
   --largeur-section: 90vw;
   --largeur-header: 45vw;
   --largeur-footer:25vw;
+  /*calcul des couleurs*/
+  --u1:215;
+  --u2:calc(var(--u1) + 180);
+  --u3:calc(var(--u2) - 30);
+  --u4:calc(var(--u2) + 30);
+  /* satruation luminosité */
+  --s-arriere: 100%;
+  --s-avant: 50%;
+  --l--arriere: 50%;
+  --l-avant: 20%;
+  /*  couleur arriere plan */
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l--arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l--arriere));
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l--arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l--arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l--arriere));
+  /* couleur avant plan - color */
+  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
 }
 
 * {
@@ -70,22 +82,27 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }
 
 /*https://chrisburnell.com/*/
