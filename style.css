@@ -16,7 +16,7 @@ Text Domain: theme-mika
   --largeur-header: 45vw;
   --largeur-footer:25vw;
   /*calcul des couleurs*/
-  --u1:371;
+  --u1:160;
   --u2:calc(var(--u1) + 180);
   --u3:calc(var(--u2) - 30);
   --u4:calc(var(--u1) + 30);
@@ -26,22 +26,33 @@ Text Domain: theme-mika
   --l--arriere: 50%;
   --l-avant: 20%;
   /*  couleur arriere plan */
-  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l--arriere));
-  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l--arriere));
-  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l--arriere));
-  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l--arriere));
-  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l--arriere));
   /* couleur avant plan - color */
   --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
   --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
-  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
   --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-evenement: var(--couleur-accueil);
+  --couleur-galerie: var(--couleur-accueil);
+  /* couleur monochrome */
+  --couleur-arriere-entete: hsl(var(--u1),100%, 50%);
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 85%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 50%);
+  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-galerie: var(--couleur-arriere-accueil);
+  /* couleur avant plan - color */
+  --couleur-entete: hsl(var(--u1), 100% ,15%);
+  --couleur-accueil: hsl(var(--u1), 100% ,25%);
+  --couleur-evenement: hsl(var(--u1), 100% , 95%);
+  --couleur-galerie: hsl(var(--u1), 100% ,35%);
+  --couleur-footer: hsl(var(--u1), 100% ,30%);
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -54,7 +65,6 @@ body {
   display: flex;
   min-height: 40vh;
   justify-content: center;
-  text-align: center;
 }
 
 .global > section,
@@ -97,6 +107,7 @@ body {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
   position: relative;
+  z-index: 1;
 }
 
 #galerie {
@@ -108,6 +119,38 @@ body {
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+  position: relative;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 3px;
+  background: #8cc4b6;
+  font-size: 16px;
+  color: #0a573d;
+  transition: ease-in-out 0.3s;
+}
+
+.btn:hover {
+  background: #9fdfc8;
+  transform: scale(2.1);
+  color: #0c5c41;
+}
+
+h3 {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: white 0px 0px 10px;
+  transition: ease-in-out 0.3s;
+}
+
+h3:hover {
+  background-color: #7fe0c0;
+  color: #0f5038;
+  transform: scale(1.1);
 }
 
 /*https://chrisburnell.com/*/
@@ -171,8 +214,24 @@ h6 {
   display: block;
   width: calc(102% + 1.3px);
   height: 130px;
+  border: 1px solid 57;
 }
 
 .vague .shape-fill {
   fill: var(--couleur-arriere-accueil);
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgb(45, 133, 118);
+  transform: skewY(-5deg);
+  opacity: 0.5;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
