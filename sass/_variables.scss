@@ -15,7 +15,7 @@
     /*calcul des couleurs*/
     --u1 :160; //couleur initial
     --u2 :calc(var(--u1) + 180); //couleur complementaire
-    --u3 :calc(var(--u2) - 30); //couleur analogue gauche
+    --u3 :calc(var(--u2) + 50); //couleur analogue gauche
     --u4 :calc(var(--u1) + 30); //couleur analogue droite
 
     /* satruation luminosité */
@@ -26,8 +26,6 @@
   
     /*  couleur arriere plan */
    
-
-
     // --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l--arriere));
     // --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l--arriere));
     // --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere), var(--l--arriere));
@@ -35,7 +33,7 @@
     // --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l--arriere));
     
     /* couleur avant plan - color */
-        --couleur-entete : hsl(var(--u1), var(--s-avant), var(--l-avant));
+        --couleur-entete : hsl(var(--u2), var(--s-avant), var(--l-avant));
         --couleur-accueil : hsl(var(--u2), var(--s-avant), var(--l-avant));
         // --couleur-evenement : hsl(var(--u3), var(--s-avant), var(--l-avant));
         // --couleur-galerie : hsl(var(--u4), var(--s-avant), var(--l-avant));
@@ -47,11 +45,11 @@
 
     /* couleur monochrome */
 
-    --couleur-arriere-entete : hsl(var(--u1),100%, 50%);
-    --couleur-arriere-accueil : hsl(var(--u1), 100%, 85%);
+    --couleur-arriere-entete : hsl(var(--u1),25%, 10%);
+    --couleur-arriere-accueil : hsl(var(--u1), 10%, 15%);
     // --couleur-arriere-evenement : hsl(var(--u1), 100%, 85%);
     // --couleur-arriere-galerie : hsl(var(--u1), 100%, 90%);
-    --couleur-arriere-footer : hsl(var(--u1), 100%, 50%);
+    --couleur-arriere-footer : hsl(var(--u1), 20%, 25%);
 
     --couleur-arriere-evenement : var(--couleur-arriere-accueil);
     --couleur-arriere-galerie : var(--couleur-arriere-accueil);
@@ -62,5 +60,12 @@
         --couleur-evenement : hsl(var(--u1), 100% , 95%);
         --couleur-galerie : hsl(var(--u1), 100% ,35%);
         --couleur-footer : hsl(var(--u1), 100% ,30%);
+        
+    /* couleur variable */
+        --couleur-variable-Diagonal : hsl(var(--u2), 40%, 2%);
+        --couleur-lien-visited : hsl( #610707);
+        --couleur-lien: #0c501b;
+        --couleur-lien-hover: #ffffff;
 }
+
 

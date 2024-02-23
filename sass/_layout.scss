@@ -16,17 +16,16 @@ body{
 display: flex;
 min-height: 40vh;
 justify-content: center;
-
 }
 
 .global > section,
 .global > header,
 .global > footer{
-    flex: 0 1 900px;
+    flex: 0 1 1500px;
    // border: 1px solid #aaa;
     padding: 3rem 1rem;
     // background-color: rgba( 0,0,0,.1);
-    background-color: rgba( 255,255,255,var(--transparence-section));
+  
 }
 
 .global >#header{
@@ -46,6 +45,7 @@ justify-content: center;
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
     position: relative;
+    min-height: 60vh;
 }
 #accueil{
     background-color: var(--couleur-arriere-accueil);
@@ -75,27 +75,29 @@ justify-content: center;
 	padding:10px 20px;
 	display:inline-block;
 	border-radius:3px;
-	background:#8cc4b6;
+	background:#323634;
 	font-size:16px;
-	color:#0a573d;
+	color:#fafffd;
     transition:ease-in-out .3s;
     
 }
 
 .btn:hover {
-    background:#9fdfc8;
+    background:#07380b;
     transform: scale(2.1);
-    color: #0c5c41;
+    color: #fcfcfc;
 }
 
-h3 {
-   background-color: #ffffff;
+section > h3{
+   background-color: #2c2c2c;
    border-radius: 5px;
    box-shadow:white 0px 0px 10px;
    transition:ease-in-out .3s;
 }
-h3:hover {
-    background-color: #70ebc2;
-    color: #0f5038;
+section > h3:hover {
+    background-color: #ffffff;
+    color: #242424;
     transform: scale(1.1);
 }
+
+
