@@ -16,9 +16,9 @@ Text Domain: theme-mika
   --largeur-header: 45vw;
   --largeur-footer:25vw;
   /*calcul des couleurs*/
-  --u1:160;
+  --u1:140;
   --u2:calc(var(--u1) + 180);
-  --u3:calc(var(--u2) - 30);
+  --u3:calc(var(--u2) - 50);
   --u4:calc(var(--u1) + 30);
   /* satruation luminosité */
   --s-arriere: 100%;
@@ -27,24 +27,28 @@ Text Domain: theme-mika
   --l-avant: 20%;
   /*  couleur arriere plan */
   /* couleur avant plan - color */
-  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-entete: hsl(var(--u2), var(--s-avant), var(--l-avant));
   --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
   --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
   --couleur-evenement: var(--couleur-accueil);
   --couleur-galerie: var(--couleur-accueil);
   /* couleur monochrome */
-  --couleur-arriere-entete: hsl(var(--u1),5%, 10%);
+  --couleur-arriere-entete: hsl(var(--u1),25%, 10%);
   --couleur-arriere-accueil: hsl(var(--u1), 10%, 15%);
   --couleur-arriere-footer: hsl(var(--u1), 20%, 25%);
   --couleur-arriere-evenement: var(--couleur-arriere-accueil);
   --couleur-arriere-galerie: var(--couleur-arriere-accueil);
   /* couleur avant plan - color */
-  --couleur-entete: hsl(var(--u1), 100% ,15%);
+  --couleur-entete: hsl(var(--u1), 100% ,40%);
   --couleur-accueil: hsl(var(--u1), 100% ,25%);
-  --couleur-evenement: hsl(var(--u1), 100% , 95%);
+  --couleur-evenement: hsl(var(--u1), 100% ,34%);
   --couleur-galerie: hsl(var(--u1), 100% ,35%);
   --couleur-footer: hsl(var(--u1), 100% ,30%);
+  /* couleur variable */
   --couleur-variable-Diagonal: hsl(var(--u2), 40%, 2%);
+  --couleur-lien-visited: hsl( #610707);
+  --couleur-lien: #0c501b;
+  --couleur-lien-hover: #ffffff;
 }
 
 * {
@@ -73,7 +77,6 @@ body {
 .global > footer {
   flex: 0 1 1500px;
   padding: 3rem 1rem;
-  background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
 .global > #header {
@@ -155,18 +158,24 @@ section > h3:hover {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /*https://chrisburnell.com/*/
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
-  color: rgba(246, 246, 247, var(--transparence-h1));
 }
 
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
-  color: rgba(211, 206, 231, var(--transparence-moyen));
 }
 
 h3 {
@@ -195,10 +204,6 @@ h6 {
   font-weight: 100;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-span {
-  display: block;
 }
 
 .vague {
@@ -239,14 +244,37 @@ span {
 
 .entete__header {
   background-image: url("images/logo.png");
-  background-position: 800px;
-  background-position-y: -30px;
-  background-size: 50%;
+  background-position-y: -90px;
+  background-position-x: 800px;
+  background-size: 60%;
   background-repeat: no-repeat;
+  position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .entete__header {
+    background-position: 50% -23%;
+  }
+}
 button {
   font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
   padding: 12px 24px;
   background-image: linear-gradient(120deg, #8cc4b6, #19201e);
+  transition: transform 0.2 ease-in-out;
+  transform: translateY(0);
+}
+
+button:hover {
+  background-image: linear-gradient(120deg, #19201e, #8cc4b6);
+  transform: translateY(-10px);
+}
+
+a {
+  color: var(--couleur-lien);
+}
+a:hover {
+  color: var(--couleur-lien-hover);
+}
+a:visited {
+  color: var(--couleur-lien-visited);
 }/*# sourceMappingURL=style.css.map */

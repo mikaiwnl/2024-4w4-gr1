@@ -13,9 +13,9 @@
 
     //
     /*calcul des couleurs*/
-    --u1 :160; //couleur initial
+    --u1 :140; //couleur initial
     --u2 :calc(var(--u1) + 180); //couleur complementaire
-    --u3 :calc(var(--u2) + 50); //couleur analogue gauche
+    --u3 :calc(var(--u2) - 50); //couleur analogue gauche
     --u4 :calc(var(--u1) + 30); //couleur analogue droite
 
     /* satruation luminosité */
@@ -55,9 +55,9 @@
     --couleur-arriere-galerie : var(--couleur-arriere-accueil);
 
     /* couleur avant plan - color */ 
-        --couleur-entete : hsl(var(--u1), 100% ,15%);
+        --couleur-entete : hsl(var(--u1), 100% ,40%);
         --couleur-accueil : hsl(var(--u1), 100% ,25%);
-        --couleur-evenement : hsl(var(--u1), 100% , 95%);
+        --couleur-evenement : hsl(var(--u1), 100% ,34%);
         --couleur-galerie : hsl(var(--u1), 100% ,35%);
         --couleur-footer : hsl(var(--u1), 100% ,30%);
         

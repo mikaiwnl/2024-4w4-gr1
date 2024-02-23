@@ -4,7 +4,7 @@ button{
     // background-image: linear-gradient(120deg, var(--bouton-couleur1) , var(--bouton-couleur2) );
     background-image: linear-gradient(120deg, #8cc4b6 , #19201e );
     transition: transform 0.2 ease-in-out;
-    transform: translate(0);
+    transform: translateY(0);
 }
 
 button:hover{
