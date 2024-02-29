@@ -41,9 +41,19 @@
                 // }
 
                 if(have_posts()):
-                    while(have_posts()) : the_post();?>
+                    while(have_posts()) : the_post();
+                    $titre = get_the_title();
+                    $sigle = substr($titre,0,7); 
+                    $titreCours = substr($titre ,8 ,-5);
+                    $duree = substr($titre, -6,6);
+                    $titrefinale = trim(substr($titre,7),$duree)
+                ?>   
                     <div class="carte">
-                        <h3><?php the_title(); ?></h3>
+                        <p><?php echo $sigle ?></p>
+                        <h3><?php echo $titrefinale ?></h3>
+                        <h3><?php echo $duree ?></h3>
+                        
+                        
                         <p><?php echo wp_trim_words(get_the_content(),20); ?></p>  
                     </div>
                    <?php endwhile;?>    

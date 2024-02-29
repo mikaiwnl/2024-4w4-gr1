@@ -292,4 +292,12 @@ a:visited {
   justify-content: space-around;
   flex: 1 0 20%;
   border: 1px solid rgb(255, 255, 255);
+}
+
+.carte h3 {
+  color: var(--couleur-entete);
+}
+
+.carte p {
+  color: var(--couleur-evenement);
 }/*# sourceMappingURL=style.css.map */
