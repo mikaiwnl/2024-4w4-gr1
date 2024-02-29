@@ -4,14 +4,23 @@
     justify-content: flex-start;
     gap: 1rem;
 }
+
+.cours .galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 .carte{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex:  1 0 20%;
     border: 1px solid rgb(255, 255, 255);
-
+    background-color: #f1f1f1;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
+
 
 .carte h3{
 
@@ -19,5 +28,13 @@
 }
 
 .carte p {
-        color:var( --couleur-evenement);
+        --couleur-evenement : hsl(var(--u1), 100% ,34%);
+        color:var();
+}
+
+
+@media (min-width: 800px) {
+    .cours-carte {
+      flex: 1 0 40%; 
+  }
 }
