@@ -72,8 +72,6 @@
         <section>
         <h2>Évenement</h2>
         <h3>On peut enlever singe de la foret mais on peut pas enlever foret de la singe  (h3) Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero adipisci repudiandae ea eius officiis, labore autem sunt dolores voluptatibus quos vitae perspiciatis nostrum nobis est. Doloremque modi nam neque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aliquam corrupti sint recusandae accusantium exercitationem nisi, ipsa eligendi, dicta rerum voluptas consequuntur? Cumque corrupti nisi, dolorum unde in sit aperiam.</h3>
-
-          
         </section>
       
 
