@@ -3,38 +3,18 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 1rem;
+    padding: 1rem;
 }
 
-.cours .galerie {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 .carte{
     display: flex;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
     justify-content: space-around;
-    flex:  1 0 20%;
-    border: 1px solid rgb(255, 255, 255);
-    background-color: #f1f1f1;
+    flex:  1 0 calc(950px/4);
+    background-color: var(--_couleur-arriere);
+    border: 2px solid rgb(206, 15, 15);
   box-sizing: border-box;
   margin-bottom: 10px;
-}
-
-
-.carte h3{
-
-    color: var(--couleur-entete);
-}
-
-.carte p {
-        --couleur-evenement : hsl(var(--u1), 100% ,34%);
-        color:var();
-}
-
-
-@media (min-width: 800px) {
-    .cours-carte {
-      flex: 1 0 40%; 
-  }
 }

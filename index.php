@@ -14,6 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="menu" class = global> 
+        <header class="menu_header">
+            <?php wp_nav_menu(array("container" => "nav")); ?>
+        </header>
+    </div>
     <div id="entete" class="global">
         <header class="entete__header">
             <h1>Thème du michael #1(h1)</h1>
@@ -44,13 +49,13 @@
                     while(have_posts()) : the_post();
                     $titre = get_the_title();
                     $sigle = substr($titre,0,7); 
-                    $titreCours = substr($titre ,8 ,-5);
-                    $duree = substr($titre, -6,6);
-                    $titrefinale = trim(substr($titre,7),$duree)
+                    $pos_parentherse = strpos($titre, '(');
+                    $duree = substr($titre, $pos_parentherse+1,-1);
+                    $titre = substr($titre,7 ,$pos_parentherse -7);
                 ?>   
                     <div class="carte">
                         <p><?php echo $sigle ?></p>
-                        <h3><?php echo $titrefinale ?></h3>
+                        <h3><?php echo $titre ?></h3>
                         <h3><?php echo $duree ?></h3>
                         
                         

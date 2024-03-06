@@ -16,7 +16,7 @@ Text Domain: theme-mika
   --largeur-header: 45vw;
   --largeur-footer:25vw;
   /*calcul des couleurs*/
-  --u1:140;
+  --u1:150;
   --u2:calc(var(--u1) + 180);
   --u3:calc(var(--u2) - 50);
   --u4:calc(var(--u1) + 30);
@@ -51,6 +51,10 @@ Text Domain: theme-mika
   --couleur-lien-hover: #ffffff;
 }
 
+.carte {
+  --_couleur-arriere: hsl(var(--u1), 100% ,85%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +72,6 @@ body {
 
 .global {
   display: flex;
-  min-height: 40vh;
   justify-content: center;
 }
 
@@ -77,6 +80,10 @@ body {
 .global > footer {
   flex: 0 1 1500px;
   padding: 3rem 1rem;
+}
+
+.global > #header {
+  flex: 1;
 }
 
 .global > #header {
@@ -158,14 +165,6 @@ section > h3:hover {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 /*https://chrisburnell.com/*/
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
@@ -251,11 +250,6 @@ h6 {
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
-  .entete__header {
-    background-position: 50% -23%;
-  }
-}
 button {
   font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
   padding: 12px 24px;
@@ -282,23 +276,40 @@ a:visited {
 .cours {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: flex-start;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .carte {
   display: flex;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
   justify-content: space-around;
-  flex: 1 0 20%;
-  border: 1px solid rgb(255, 255, 255);
+  flex: 1 0 237.5px;
+  background-color: var(--_couleur-arriere);
+  border: 2px solid rgb(206, 15, 15);
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
-.carte h3 {
-  color: var(--couleur-entete);
+/*
+feuille de style du menu principale
+*/
+.menu-principal-container {
+  background-color: black;
 }
 
-.carte p {
-  color: var(--couleur-evenement);
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-item {
+  flex: 1 0 50px;
+}
+
+.menu-item a {
+  color: green;
 }/*# sourceMappingURL=style.css.map */

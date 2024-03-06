@@ -13,7 +13,7 @@
 
     //
     /*calcul des couleurs*/
-    --u1 :140; //couleur initial
+    --u1 :150; //couleur initial
     --u2 :calc(var(--u1) + 180); //couleur complementaire
     --u3 :calc(var(--u2) - 50); //couleur analogue gauche
     --u4 :calc(var(--u1) + 30); //couleur analogue droite
@@ -67,5 +67,7 @@
         --couleur-lien: #0c501b;
         --couleur-lien-hover: #ffffff;
 }
-
+ .carte{
+    --_couleur-arriere : hsl(var(--u1), 100% ,85%);
+ }
 
