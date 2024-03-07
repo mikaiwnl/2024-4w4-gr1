@@ -18,7 +18,7 @@ justify-content: center;
 }
 
  #menu{
-
+  background-color: var(--couleur-arriere-galerie)
  }
 
 .global > section,
@@ -62,12 +62,13 @@ justify-content: center;
     background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-evenement);
     position: relative;
+    z-index:2;
 }
 #galerie{
     background-color:  var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 #footer{
@@ -87,6 +88,10 @@ justify-content: center;
 	color:#fafffd;
     transition:ease-in-out .3s;
     
+}
+
+ h2 span{
+display: block;
 }
 
 .btn:hover {

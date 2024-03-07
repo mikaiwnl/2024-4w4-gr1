@@ -55,6 +55,14 @@ Text Domain: theme-mika
   --_couleur-arriere: hsl(var(--u1), 100% ,85%);
 }
 
+#entete {
+  --_couleur-avant-vague: var(--couleur-arriere-accueil) ;
+}
+
+#galerie {
+  --_couleur-arriere-vague: var(--couleur-arriere-footer) ;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -73,6 +81,10 @@ body {
 .global {
   display: flex;
   justify-content: center;
+}
+
+#menu {
+  background-color: var(--couleur-arriere-galerie);
 }
 
 .global > section,
@@ -120,13 +132,14 @@ body {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
   position: relative;
+  z-index: 2;
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 #footer {
@@ -145,6 +158,10 @@ body {
   font-size: 16px;
   color: #fafffd;
   transition: ease-in-out 0.3s;
+}
+
+h2 span {
+  display: block;
 }
 
 .btn:hover {
@@ -220,11 +237,11 @@ h6 {
   position: relative;
   display: block;
   width: calc(102% + 1.3px);
-  height: 130px;
+  height: 50px;
 }
 
-.vague .shape-fill {
-  fill: var(--couleur-arriere-accueil);
+.vague .remplissage {
+  fill: var(--_couleur-avant-vague);
 }
 
 .diagonal {
@@ -244,13 +261,18 @@ h6 {
 
 .entete__header {
   background-image: url("images/logo.png");
-  background-position-y: -90px;
-  background-position-x: 800px;
-  background-size: 60%;
+  background-position-y: top;
+  background-position-x: right;
+  background-size: 50%;
   background-repeat: no-repeat;
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .entete {
+    background-position: 50% 50%;
+  }
+}
 button {
   font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
   padding: 12px 24px;
@@ -299,18 +321,51 @@ a:visited {
 feuille de style du menu principale
 */
 .menu-principal-container {
-  background-color: black;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+@media (min-width: 768px) {
+  .menu-principal-container {
+    transform: translateX(0);
+  }
 }
 
 .menu {
-  display: flex;
-  list-style-type: none;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
 }
 
 .menu-item {
   flex: 1 0 50px;
+  list-style-type: none;
 }
 
 .menu-item a {
-  color: green;
+  color: rgb(255, 255, 255);
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media (min-width: 768px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu-principal-container {
+  transform: translateX(0%);
 }/*# sourceMappingURL=style.css.map */
