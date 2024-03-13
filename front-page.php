@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    
   
     <?php get_header(); ?>
     <div id="entete" class="global">
