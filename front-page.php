@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+
   
     <?php get_header(); ?>
     <div id="entete" class="global">
@@ -47,7 +47,7 @@
                 ?>   
                     <div class="carte">
                      
-                        <h3><?php echo $titre ?></h3>
+                      
                  
                         
                         
