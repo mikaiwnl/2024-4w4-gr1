@@ -1,5 +1,6 @@
-##labo4
-## CREATION D'UN ME MENU
+# LABO 4
+# MICHAEL ALI SOEU
+## CREATION D'UN MENU
 ## LIEN GITHUB https://mikaiwnl.github.io/2024-4w4-gr1/
 
 ##### creation d'une header.php
