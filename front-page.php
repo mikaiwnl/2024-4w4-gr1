@@ -15,12 +15,11 @@
 </head>
 
 <body>
-
   
     <?php get_header(); ?>
     <div id="entete" class="global">
         <header class="entete__header">
-            <h1>Front-Page#1</h1>
+            <h1>Front-Page</h1>
             <h2><span>4w4-Conception d'interface et </span><span>développement Web</span></h2>
             <h3>TIM-College de Maisonneuve</h3>
             <button><a href="https://www.freecodecamp.org/">Évenements</a></button>
@@ -43,12 +42,12 @@
                 if(have_posts()):
                     while(have_posts()) : the_post();
                     $titre = get_the_title();
-                  
+                 
                 ?>   
                     <div class="carte">
-                     
-                      
-                 
+                        
+                        <h3><?php echo $titre ?></h3>
+                    
                         
                         
                         <p><?php echo get_the_content(); ?></p>  
