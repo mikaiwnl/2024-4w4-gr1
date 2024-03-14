@@ -17,6 +17,7 @@
 
 <body>
 <div id="menu" class="global">
+     <?php   echo get_custom_logo() ?>
         <header class="menu_header">
             <input type="checkbox" name="" id="chk-burger">
             <label id="burger-bouton" for="chk-burger">
