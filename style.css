@@ -296,7 +296,7 @@ a:visited {
   color: var(--couleur-lien-visited);
 }
 
-.cours {
+.destinations {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -315,6 +315,11 @@ a:visited {
   border: 2px solid rgb(206, 15, 15);
   box-sizing: border-box;
   margin-bottom: 10px;
+}
+
+.post-categories {
+  display: flex;
+  list-style-type: none;
 }
 
 /*
