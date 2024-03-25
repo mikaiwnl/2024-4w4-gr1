@@ -16,9 +16,9 @@
 </head>
 
 <body>
-<div id="menu" class="global">
+<div id="menu" class="global clr-agencement-primaire">
      <?php   echo get_custom_logo() ?>
-        <header class="menu_header">
+        <header class="menu_entete">
             <input type="checkbox" name="" id="chk-burger">
             <label id="burger-bouton" for="chk-burger">
                 <svg id="burger" width="48" height="48" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000">
