@@ -1,4 +1,4 @@
-.cours{
+.destinations{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -11,10 +11,14 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     flex:  1 0 calc(950px/4);
     background-color: var(--_couleur-arriere);
     border: 2px solid rgb(206, 15, 15);
   box-sizing: border-box;
   margin-bottom: 10px;
+}
+.post-categories{
+ display: flex;
+ list-style-type: none;
 }

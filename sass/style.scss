@@ -12,7 +12,8 @@ Text Domain: theme-mika
 /* https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
  */
 
-@import "variables";
+@import "utile/couleur";
+@import "utile/couleur-class";
 @import "layout";
 ////////////////////////////////////////
 @import "base/h";
@@ -22,5 +23,5 @@ Text Domain: theme-mika
 @import "entete";
 @import "base/bouton";
 @import "base/liens";
-@import "composant/cours";
+@import "composant/carte";
 @import "composant/menu";

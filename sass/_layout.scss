@@ -17,9 +17,11 @@ display: flex;
 justify-content: center;
 }
 
- #menu{
-  background-color: var(--couleur-arriere-galerie)
+#menu{
+    position: relative;
+//  background-color: var(--couleur-arriere-galerie)
  }
+
 
 .global > section,
 .global > header,
@@ -60,7 +62,7 @@ justify-content: center;
 }
 #evenement{
     background-color: var(--couleur-arriere-evenement);
-    color: var(--couleur-evenement);
+    color: var(--couleur-arriere-evenement);
     position: relative;
     z-index:2;
 }

@@ -31,49 +31,33 @@
     <div id="accueil" class="global">
         <section>
             <h2>Accueil</h2>
-            <div class="destination">
-                        <!-- Séparation des composants du sigle, titre du cours et durée -->
-            <?php
-            $args = array(
-                'category_name' => 'Populaire', // replace with your category slug
-                'posts_per_page' => 100, // adjuster si
-            );
-            $query = new WP_Query($args);
-            if ($query->have_posts()) :
-                while ($query->have_posts()) : $query->the_post();
-            ?>
-                    <div class="carte">
-                        <h3><?php the_title(); ?></h3>
-                        <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
-                        <?php the_category(); ?>
-                        <a href="<?php the_permalink() ?>">Suite</a>
-                    </div>
-                <?php endwhile; ?>
-                <?php wp_reset_postdata(); // reset the query 
-                ?>
-            <?php endif; ?>
-        </div>
-        </section>
-    </div>
-    
-    <div id="evenement" class="global diagonal">
-    <section>
-        <h2>Catégories (h2)</h2>
-        <?php
-        $categories = get_categories();
-        foreach ($categories as $categorie) : ?>
-            <div class="carte">
-                <h3><?php echo $categorie->name; ?></h3>
-                <p><?php echo $categorie->description; ?></p>
+            <div class="destinations">
+                <?php
+            
+                if (have_posts()) :
+                    while (have_posts()) : the_post();
+                        $titre = get_the_title();    ?>
+                        <div class="carte">
+
+                            <h3><?php the_title(); ?></h3>
+
+                            <p><?php echo wp_trim_words(get_the_content(),10); ?> </p>
+                            <?php the_category(); ?>
+                           <a href="<?php the_permalink();?>">Suite</a>
+                        </div>
+
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
-        <?php endforeach; ?>
-    </section>
-           
+        </section>
+
+    </div>
+   
     </div>
     <div id="galerie" class="global">
         <section>
             <h2>Gallerie(h2)</h2>
-          
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate vitae quisquam ipsum est a doloremque in, blanditiis architecto iure perferendis dolorum esse? Dicta, quasi officia autem voluptate ex ad.</h3>
         </section>
         <?php get_template_part('gabarits/vague') ?>
     </div>
