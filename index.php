@@ -19,8 +19,8 @@
     <?php get_header(); ?>
     <div id="entete" class="global">
         <header class="entete__header">
-            <h1>Front-Page</h1>
-            <h2><span>4w4-Conception d'interface et </span><span>développement Web</span></h2>
+            <h1> Explorez le monde </h1>
+            <h2>votre voyage commence ici</h2>
             <h3>TIM-College de Maisonneuve</h3>
             <button><a href="https://www.freecodecamp.org/">Évenements</a></button>
         </header>
@@ -48,9 +48,9 @@
                         
                         <h3><?php echo $titre ?></h3>
                     
+    
                         
-                        
-                        <p><?php echo get_the_content(); ?></p>  
+                        <p><?php echo wp_trim_words(get_the_content(),20); ?></p>  
                     </div>
                    <?php endwhile;?>    
                     <?php endif;?>
