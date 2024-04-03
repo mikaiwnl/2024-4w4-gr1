@@ -1,3 +1,5 @@
+
+
 :root{
 
     //  /* niveau de transparence des h */
@@ -13,7 +15,11 @@
 
     //
     /*calcul des couleurs*/
+
     --u1 :229; //couleur initial
+
+    --u1 :230; //couleur initial
+
     --u2 :calc(var(--u1) + 180); //couleur complementaire
     --u3 :calc(var(--u2) - 50); //couleur analogue gauche
     --u4 :calc(var(--u1) + 30); //couleur analogue droite
@@ -77,6 +83,7 @@
 #galerie{
     --_couleur-arriere-vague : var(--couleur-arriere-footer)
 }
+
 
 
 
