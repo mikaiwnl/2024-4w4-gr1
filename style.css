@@ -16,10 +16,7 @@ Text Domain: theme-mika
   --largeur-header: 45vw;
   --largeur-footer:25vw;
   /*calcul des couleurs*/
-
   --u1:229;
-
-
   --u2:calc(var(--u1) + 180);
   --u3:calc(var(--u2) - 50);
   --u4:calc(var(--u1) + 30);
@@ -416,12 +413,12 @@ h6 {
 }
 
 .entete__header {
-
   background-image: url("images/logo.png");
   background-position-y: top;
   background-position-x: right;
   background-size: 25%;
-
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
