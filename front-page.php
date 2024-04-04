@@ -58,22 +58,33 @@
     
     <div id="evenement" class="global diagonal">
     <section>
-        <h2>Catégories (h2)</h2>
-        <?php
-        $categories = get_categories();
-        foreach ($categories as $categorie) : ?>
-            <div class="carte">
-                <h3><?php echo $categorie->name; ?></h3>
-                <p><?php echo $categorie->description; ?></p>
-            </div>
-        <?php endforeach; ?>
+        <h2>evenement</h2>
+
+
     </section>
            
     </div>
     <div id="galerie" class="global">
         <section>
-            <h2>Gallerie(h2)</h2>
-          
+            <h2>les destination par categorie</h2>
+            <article>
+            <?php 
+            $categories = get_categories();
+            foreach ($categories as $elm_categorie) {
+                $nom= $elm_categorie->name;
+                $description = wp_trim_words($elm_categorie->description ,10 );
+                $nombre_destination = $elm_categorie->count;
+                $categorie_url = get_category_link($elm_categorie->term_id);           
+            ?>
+     
+            <div class="carte">
+           <h3><?php echo $nom ?></h3>
+            <p><?php echo $description ?></p>
+           <p>nombre de destination : <?php echo $nombre_destination ?></p>
+           <a href="<?php echo $categorie_url ?>">Voir la destination...</a>
+                 </div>
+            <?php } ?>
+            </article>
         </section>
         <?php get_template_part('gabarits/vague') ?>
     </div>

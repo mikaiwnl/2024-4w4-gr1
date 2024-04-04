@@ -41,9 +41,9 @@
 
                             <h3><?php the_title(); ?></h3>
 
-                            <p><?php echo wp_trim_words(get_the_content(),10); ?> </p>
+                            <p> <?php echo wp_trim_words(get_the_content(),10);?> </p>
                             <?php the_category(); ?>
-                           <a href="<?php the_permalink();?>">Suite</a>
+                           <a href=<?php the_permalink();?>> Suite...</a>
                         </div>
 
                     <?php endwhile; ?>
@@ -56,9 +56,7 @@
     </div>
     <div id="galerie" class="global">
         <section>
-            <h2>Gallerie(h2)</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate vitae quisquam ipsum est a doloremque in, blanditiis architecto iure perferendis dolorum esse? Dicta, quasi officia autem voluptate ex ad.</h3>
-        </section>
+           </section>
         <?php get_template_part('gabarits/vague') ?>
     </div>
 

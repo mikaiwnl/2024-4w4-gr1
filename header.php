@@ -26,5 +26,7 @@
                 </svg>
             </label>
             <?php wp_nav_menu(array('theme_location' => 'principal', 'container' => 'nav')); ?>
+            <?php get_search_form() ?>
+            
         </header>
     </div>

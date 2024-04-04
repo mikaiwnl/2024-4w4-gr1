@@ -1,4 +1,4 @@
-.destinations{
+.destinations , .categories{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -8,17 +8,31 @@
 
 .carte{
     display: flex;
-    align-items: center;
-    text-align: center;
     flex-direction: column;
-    justify-content: space-between;
-    flex:  1 0 calc(950px/4);
-    background-color: var(--_couleur-arriere);
-    border: 2px solid rgb(206, 15, 15);
-  box-sizing: border-box;
-  margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 calc(950px/4);
+    background-color: $--clr-bleu-pale;
+    border: 2px solid rgb(46, 119, 202);
+    border-radius: 10px;
+    gap: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    margin: 10px;
 }
-.post-categories{
- display: flex;
- list-style-type: none;
+
+
+.carte a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.carte h3 {
+  text-align: center;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+}
+
+.post-categories {
+  display: flex;
+  list-style-type: none;
+  gap: 0.5rem;
 }
