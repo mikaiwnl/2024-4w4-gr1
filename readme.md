@@ -1,18 +1,11 @@
-# Exercice 2
+# Intra
 # MICHAEL ALI SOEU
 ## LIEN GITHUB https://mikaiwnl.github.io/2024-4w4-gr1/
+## SITE WP: https://gftnth00.mywhc.ca/tim27/dadadada
 
-##### creation d'une header.php
--Amélioration de la page d'accueil (front-page.php) (1 point)
-
--Changer le titre et la description générale du site
--Chaque destination contient les catégories associées.
--On voit uniquement les destinations « populaire »
--Améliorer l'apparence de la liste des catégories
--Améliorer l'apparence de chacune des cartes
--Afficher des cartes de catégories pour l'ensemble des catégories dans la page d'accueil (2 points)
-
-###Titre de la catégorie
--10 premiers mot de la description
--Un lien permet d'accéder à la liste des destinations de cette catégorie
--Le nombre d'article pour cette catégorie
+##### MISE EN  PAGE ERREUR404.PHP
+-creation de Titre principal, sous-titre, texte et format général
+-ajouter	Une image de la librairie média est intégrée dans le model, 
+-faire  en sorte que cette image disparaît sur écran mobile 
+-ajouter	 le formulaire de recherche fonctionnel reproduit comme sur la maquette  
+-ajoutez 	La liste des catégories de destinations sous la forme de lien 
