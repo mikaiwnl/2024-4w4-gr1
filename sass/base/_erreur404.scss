@@ -1,0 +1,41 @@
+a{
+    text-decoration: none;
+    color: var(--couleur-texte);
+ }
+
+ .accueil{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+ p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+ }
+
+ #footer{
+
+    display:  flex;
+    flex-direction: column;
+    justify-content:  space-between;
+    height: 30vh;
+    
+ }
+
+ #erreur{
+    display: flex;
+    background-color: var(--couleur-arriere-accueil);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+ }
+ .menu-principal-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+ }

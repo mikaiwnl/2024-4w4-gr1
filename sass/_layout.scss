@@ -122,3 +122,27 @@ section > h3:hover {
         align-items: center;
      }
  }
+
+
+ a{
+    text-decoration: none;
+    color: var(--couleur-texte);
+ }
+
+ .accueil{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+ p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+ }
+
+ .footer{
+    display:  flex;
+    flex-direction: column;
+    justify-content:  space-between;
+ }
