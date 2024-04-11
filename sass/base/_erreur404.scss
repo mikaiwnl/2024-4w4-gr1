@@ -1,0 +1,91 @@
+a{
+    text-decoration: none;
+    color: var(--couleur-texte);
+ }
+
+ .accueil{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+ p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+ }
+
+ #footer{
+
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  space-between;
+    height: 30vh;
+    
+ }
+
+ #erreur
+ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image:url("images/avion2.png");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 75% 50%;
+    background-color: var(--couleur-arriere-accueil);
+    
+}
+
+ #errConteneur{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+ }
+
+
+ 
+
+ ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    a {
+        transition: color 0.3s ease;
+
+        &:hover {
+            color:rgb(116, 186, 233);
+        }
+    }
+}
+
+p{
+    
+}
+
+
+#errConteneur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: rgb(255, 0, 0)
+}
+
+@media (max-width: 768px) {
+      #erreur{
+        background-image: none;
+      }
+
+      #footer{
+       .conteneurSecondaire{
+        display: none;}
+      }
+    }

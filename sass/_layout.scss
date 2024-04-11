@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     display: flex;
@@ -11,30 +14,135 @@ body{
 
 .global {
 display: flex;
-min-height: 40vh;
 justify-content: center;
 }
+
+#menu{
+    position: relative;
+//  background-color: var(--couleur-arriere-galerie)
+ }
+
 
 .global > section,
 .global > header,
 .global > footer{
-    flex: 0 1 900px;
-    border: 1px solid #aaa;
-
+    flex: 0 1 1500px;
+   // border: 1px solid #aaa;
+    padding: 3rem 1rem;
+    // background-color: rgba( 0,0,0,.1);
+  z-index: 1;
+}
+.global >#header{
+    flex:1;
 }
 
+.global >#header{
+    min-height: var(--largeur-header);
+}
+
+.global >#footer{
+    min-height: var(--largeur-footer);
+}
+.global > #section{
+    min-height: var(--largeur-section);
+}
+#entete , #footer{
+    min-height: 20vh;
+}
 #entete{
     background-color: var(--couleur-arriere-entete);
+    color: var(--couleur-entete);
+    position: relative;
+    min-height: 60vh;
 }
 #accueil{
     background-color: var(--couleur-arriere-accueil);
+    color: var(--couleur-accueil);
+    position: relative;
 }
 #evenement{
     background-color: var(--couleur-arriere-evenement);
+    color: var(--couleur-arriere-evenement);
+    position: relative;
+    z-index:2;
 }
 #galerie{
     background-color:  var(--couleur-arriere-galerie);
+    color: var(--couleur-galerie);
+    position: relative;
+    z-index: 1;
 }
+
 #footer{
     background-color: var(--couleur-arriere-footer);
+    color: var(--couleur-footer);
+    position: relative;
 }
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+	padding:10px 20px;
+	display:inline-block;
+	border-radius:3px;
+	background:#323634;
+	font-size:16px;
+	color:#fafffd;
+    transition:ease-in-out .3s;
+    
+}
+
+ h2 span{
+display: block;
+}
+
+.btn:hover {
+    background:#07380b;
+    transform: scale(2.1);
+    color: #fcfcfc;
+}
+
+section > h3{
+   background-color: #2c2c2c;
+   border-radius: 5px;
+   box-shadow:white 0px 0px 10px;
+   transition:ease-in-out .3s;
+}
+section > h3:hover {
+    background-color: #ffffff;
+    color: #242424;
+    transform: scale(1.1);
+}
+
+ @media screen and (max-width: 768px){
+     header{
+       display: flex;
+     flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+ }
+
+
+ a{
+    text-decoration: none;
+    color: var(--couleur-texte);
+ }
+
+ .accueil{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+ p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+ }
+
+ .footer{
+    display:  flex;
+    flex-direction: column;
+    justify-content:  space-between;
+ }
