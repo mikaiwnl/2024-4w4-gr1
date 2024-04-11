@@ -35,7 +35,8 @@ a{
     background-size: 15%;
     background-position: 75% 50%;
     background-color: var(--couleur-arriere-accueil);
- }
+    
+}
 
  #errConteneur{
   
@@ -63,3 +64,28 @@ a{
         }
     }
 }
+
+p{
+    
+}
+
+
+#errConteneur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: rgb(255, 0, 0)
+}
+
+@media (max-width: 768px) {
+      #erreur{
+        background-image: none;
+      }
+
+      #footer{
+       .conteneurSecondaire{
+        display: none;}
+      }
+    }
