@@ -22,18 +22,19 @@
         <section>
         <h2>ERREUR 404: </h2>
             <p>vous essayez d'Accéder à une page qui n'existe pas</p>
+            <p>Pour revenir à la page d'accueil cliquer sur le lien suivant</p>
+
             <?php get_bloginfo('name') ; ?>
             <?php get_bloginfo('url'); ?>
             <a href="<?php echo get_bloginfo('url')?>"><?php echo get_bloginfo('name') ?></a>
+
+         <?php wp_nav_menu(array('theme_location' => 'principal', 'container' => 'nav')); ?> 
         </section>
         </div>    
      
         <div class="flexbox">
         <div class="cours">
-            <?php 
-        
-            
-                ?>   
+       
                     <div class="carte">
                         
                     
@@ -47,6 +48,7 @@
         
     <div id="footer" class="global">
         <footer><h2>Footer</h2>
+        <?php get_search_form() ?>
               <h3> (h3) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vero maiores saepe eveniet quas, laudantium eius earum iure tempore quisquam repellat accusamus eum repudiandae adipisci! Similique obcaecati aperiam distinctio enim.</h3>
                 <h3> (h3) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum architecto maxime eos nesciunt eligendi, at nihil minus maiores nemo quis alias. Debitis facilis exercitationem suscipit voluptates provident dolorem? Illum, expedita?</h3>
         </footer>
