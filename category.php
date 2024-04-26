@@ -34,6 +34,7 @@
             <div class="destinations">
                 <?php
             
+            
                 if (have_posts()) :
                     while (have_posts()) : the_post();
                         $titre = get_the_title();    ?>

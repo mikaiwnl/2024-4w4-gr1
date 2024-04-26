@@ -29,6 +29,7 @@
         <section>
             <h2>Gallerie(h2)</h2>
 
+            
         </section>
         <?php get_template_part('gabarits/vague') ?>
     </div>
