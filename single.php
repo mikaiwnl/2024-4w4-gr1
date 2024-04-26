@@ -1,7 +1,9 @@
-<html>
-
-<body>
-
+<?php 
+/**
+ *  Le modèle single.php
+ * 
+ */
+?>
     <?php get_header(); ?>
 
     <div id="accueil" class="global">
@@ -30,13 +32,7 @@
         </section>
         <?php get_template_part('gabarits/vague') ?>
     </div>
-    <div id="footer" class="global">
-        <footer>
-            <h2>Footer</h2>
-            <a class="btn large" href="#entete">retour en haut</a>
-            <h3> (h3) Lorem ipsum .</h3>
-        </footer>
-    </div>
+<?php get_footer(); ?>
 </body>
 
 </html>
