@@ -58,7 +58,7 @@
     
     <div id="evenement" class="global diagonal">
     <section>
-        <h2>evenement</h2>
+        <h2>évenement</h2>
 
 
         

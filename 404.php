@@ -66,8 +66,6 @@
 </ul>
             
           <div class="conteneurSecondaire">  <?php wp_nav_menu(array('theme_location' => 'secondaire', 'container' => 'nav')); ?></div>
-
-
         
         </footer>
 
