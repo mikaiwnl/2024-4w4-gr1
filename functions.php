@@ -11,8 +11,8 @@
         );
       }
       add_action( 'init', 'register_my_menus' ); 
-add_theme_support('menus');
-add_theme_support('custom-logo');
+      add_theme_support('menus');
+      add_theme_support('custom-logo');
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté

@@ -19,6 +19,11 @@
 
                         <h2><?php the_title() ?></h2>
                         <p><?php the_content(); ?></p>
+                        <a href="<?php the_permalink();?>" >Lire la suite  </a>
+                        <p>Temperature minimum: <?php the_field('temperature_minimum') ?></p>
+                        <p>Temperature maximum: <?php the_field('temperature_maximum') ?></p>
+                        <p>Ville Avoisinante: <?php the_field('ville_avoisinante') ?></p>
+                        <?php  ?>
                     </div>
 
                 <?php endif; ?>
