@@ -50,8 +50,9 @@ justify-content: center;
     min-height: 20vh;
 }
 #entete{
-    background-color: var(--couleur-arriere-entete);
-    color: var(--couleur-entete);
+    background-image:url('images/fond.jpg');
+    background-size: cover;
+    color: var(--couleur-arriere-footer);
     position: relative;
     min-height: 60vh;
 }
@@ -62,10 +63,13 @@ justify-content: center;
 }
 #evenement{
     background-color: var(--couleur-arriere-evenement);
-    color: var(--couleur-arriere-evenement);
+    color: var(--couleur-evenement);
     position: relative;
     z-index:2;
 }
+
+
+
 #galerie{
     background-color:  var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);

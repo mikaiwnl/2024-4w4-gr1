@@ -216,6 +216,19 @@ ce mpa contient un map primaire et plusieurs sous map*/
   background-color: hsl(70, 100%, 85%);
 }
 
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flexbox_elm {
+  flex: 1 0 150px;
+  border: 1px solid #7d619c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -269,8 +282,9 @@ body {
 }
 
 #entete {
-  background-color: var(--couleur-arriere-entete);
-  color: var(--couleur-entete);
+  background-image: url("images/fond.jpg");
+  background-size: cover;
+  color: var(--couleur-arriere-footer);
   position: relative;
   min-height: 60vh;
 }
@@ -283,7 +297,7 @@ body {
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
-  color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
   position: relative;
   z-index: 2;
 }
@@ -366,6 +380,20 @@ p {
   justify-content: space-between;
 }
 
+.entete__header {
+  background-image: url("images/logo.png");
+  background-position-y: top;
+  background-position-x: right;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .entete {
+    background-position: 50% 50%;
+  }
+}
 /*https://chrisburnell.com/*/
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
@@ -406,56 +434,6 @@ h6 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.vague {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.vague svg {
-  position: relative;
-  display: block;
-  width: calc(102% + 1.3px);
-  height: 50px;
-}
-
-.vague .remplissage {
-  fill: var(--_couleur-avant-vague);
-}
-
-.diagonal {
-  position: relative;
-  isolation: isolate;
-}
-
-.diagonal::after {
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-color: var(--couleur-variable-Diagonal);
-  transform: skewY(-5deg);
-  opacity: 0.5;
-  z-index: -1;
-}
-
-.entete__header {
-  background-image: url("images/logo.png");
-  background-position-y: top;
-  background-position-x: right;
-  background-size: 25%;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  .entete {
-    background-position: 50% 50%;
-  }
-}
 a {
   text-decoration: none;
   color: var(--couleur-texte);
@@ -529,18 +507,18 @@ ul a:hover {
     display: none;
   }
 }
-button {
-  border-radius: 25px;
-  font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.5rem);
+.bouton {
+  font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
   padding: 12px 24px;
-  background-image: linear-gradient(120deg, #2c37ca, #9455b1);
-  transition: transform 0.2s ease-in-out;
+  background-image: linear-gradient(120deg, #e8cf54, #f7d306);
+  margin-top: 30px;
+  transition: transform 0.2s;
   transform: translateY(0);
-  border: none;
 }
 
-button:hover {
-  background-image: linear-gradient(120deg, #2c1eaf, #6157bd);
+.bouton:hover {
+  background-image: linear-gradient(120deg, #3e0fc0, #91672b);
+  transform: translateY(-10px);
 }
 
 a {
@@ -551,6 +529,42 @@ a:hover {
 }
 a:visited {
   color: var(--couleur-lien-visited);
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(102% + 1.3px);
+  height: 50px;
+}
+
+.vague .remplissage {
+  fill: var(--_couleur-avant-vague);
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: var(--couleur-variable-Diagonal);
+  transform: skewY(-5deg);
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .destinations, .categories {
@@ -643,17 +657,4 @@ feuille de style du menu principale
 
 #chk-burger:checked ~ .menu-principal-container {
   transform: translateX(0%);
-}
-
-.flexbox {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.flexbox_elm {
-  flex: 1 0 150px;
-  border: 1px solid #7d619c;
 }/*# sourceMappingURL=style.css.map */
