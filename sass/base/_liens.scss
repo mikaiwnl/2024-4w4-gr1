@@ -1,0 +1,12 @@
+a{
+    color: var(--couleur-lien);
+
+
+    &:hover{
+        color :var(--couleur-lien-hover)
+    }
+
+    &:visited{
+        color: var(--couleur-lien-visited);
+    }
+}

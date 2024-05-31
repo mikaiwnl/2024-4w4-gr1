@@ -1,0 +1,148 @@
+
+
+:root{
+
+    //  /* niveau de transparence des h */
+    // --transparence-h1 : 1;
+    // --transparence-moyen : 0.5;
+    // --transparence-peu : 0.7;
+    // transparence des sections
+    //  --transparence-section : 0.1;
+      // largeur des section
+      --largeur-section : 90vw;
+     --largeur-header : 45vw;
+      --largeur-footer :25vw;    
+
+    //
+    /*calcul des couleurs*/
+
+    --u1 :199; //couleur initial
+
+    --u2 :calc(var(--u1) + 180); //couleur complementaire
+    --u3 :calc(var(--u1) - 50); //couleur analogue gauche
+    --u4 :calc(var(--u1) + 30); //couleur analogue droite
+
+    /* satruation luminosité */
+    --s-arriere : 100%;
+    --s-avant : 50%;
+    --l--arriere : 50%;
+    --l-avant : 20%;
+  
+    /*  couleur arriere plan */
+   
+    // --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l--arriere));
+    // --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l--arriere));
+    // --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere), var(--l--arriere));
+    // --couleur-arriere-galerie : hsl(var(--u4), var(--s-arriere), var(--l--arriere));
+    // --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l--arriere));
+    
+    /* couleur avant plan - color */
+        --couleur-entete : hsl(var(--u2), var(--s-avant), var(--l-avant));
+        --couleur-accueil : hsl(var(--u2), var(--s-avant), var(--l-avant));
+        // --couleur-evenement : hsl(var(--u3), var(--s-avant), var(--l-avant));
+        // --couleur-galerie : hsl(var(--u4), var(--s-avant), var(--l-avant));
+        --couleur-footer : hsl(var(--u1), var(--s-avant), var(--l-avant));
+
+        // pour que la diagonal soit entierement visible
+        --couleur-evenement : var(--couleur-accueil);
+        --couleur-galerie : var(--couleur-accueil);
+
+    /* couleur monochrome */
+
+    --couleur-arriere-entete : hsl(var(--u1),25%, 10%);
+    --couleur-arriere-accueil : hsl(var(--u1), 10%, 15%);
+    // --couleur-arriere-evenement : hsl(var(--u1), 100%, 85%);
+    // --couleur-arriere-galerie : hsl(var(--u1), 100%, 90%);
+    --couleur-arriere-footer : hsl(var(--u1), 20%, 25%);
+
+    --couleur-arriere-evenement : var(--couleur-arriere-accueil);
+    --couleur-arriere-galerie : var(--couleur-arriere-accueil);
+
+    /* couleur avant plan - color */ 
+        --couleur-entete : hsl(var(--u1), 100% ,40%);
+        --couleur-accueil : hsl(var(--u1), 100% ,25%);
+        --couleur-evenement : hsl(var(--u1), 100% ,34%);
+        --couleur-galerie : hsl(var(--u1), 100% ,35%);
+        --couleur-footer : hsl(var(--u1), 100% ,30%);
+        
+    /* couleur variable */
+        --couleur-variable-Diagonal : hsl(var(--u2), 40%, 2%);
+        --couleur-lien-visited : hsl( #610707);
+        --couleur-lien: #0c501b;
+        --couleur-lien-hover: #ffffff;
+}
+ .carte{
+    --_couleur-arriere : hsl(var(--u1), 100% ,85%);
+ }
+
+#entete{
+    --_couleur-avant-vague : var(--couleur-arriere-accueil)
+}
+#galerie{
+    --_couleur-arriere-vague : var(--couleur-arriere-footer)
+}
+
+
+
+
+
+
+$--clr-bleu-pale    : hsl(220, 100%, 85%);
+$--clr-bleu-leger  : hsl(220, 100%, 60%);
+$--clr-bleu-moyen  : hsl(220, 100%, 30%);    
+$--clr-bleu-fonce  : hsl(220, 100%, 15%);
+
+
+$--clr-orange-pale: hsl(40, 100%, 85%);
+$--clr-orange-leger  : hsl(40, 100%, 50%);
+$--clr-orange-moyen  : hsl(40, 100%, 30%);
+$--clr-orange-fonce  : hsl(40, 100%, 15%);
+
+$--clr-rouge-pale: hsl(10, 100%, 85%);
+$--clr-rouge-leger  : hsl(10, 100%, 50%);
+$--clr-rouge-moyen  : hsl(10, 100%, 30%);
+$--clr-rouge-fonce  : hsl(10, 100%, 15%);
+
+$--clr-vert-pale: hsl(70, 100%, 85%);
+$--clr-vert-leger  : hsl(70, 100%, 50%);
+$--clr-vert-moyen  : hsl(70, 100%, 30%);
+$--clr-vert-fonce  : hsl(70, 100%, 15%);
+
+/*  a partir des variable de couleur de la palette choisie on crée  un mapping en categorisant les différentes couleurs
+ce mpa contient un map primaire et plusieurs sous map*/
+
+$defaut: (
+    primaire : (
+        100: $--clr-bleu-pale,
+        200: $--clr-bleu-leger,
+        300: $--clr-bleu-moyen,
+        400: $--clr-bleu-fonce
+    ),
+    secondaire : (
+        100: $--clr-orange-pale,
+        200: $--clr-orange-leger,
+        300: $--clr-orange-moyen,
+        400: $--clr-orange-fonce
+    ),
+    ternaire : (
+        100: $--clr-rouge-pale,
+        200: $--clr-rouge-leger,
+        300: $--clr-rouge-moyen,
+        400: $--clr-rouge-fonce
+    ),
+    vert : (
+        100: $--clr-vert-pale,
+        200: $--clr-vert-leger,
+        300: $--clr-vert-moyen,
+        400: $--clr-vert-fonce
+    )
+);
+
+/* Agencement de couleurs */
+
+$agencement-couleur :(
+    primaire: ($--clr-bleu-pale, ($--clr-bleu-fonce, $--clr-bleu-leger)),
+    secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
+    ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
+    vert: ($--clr-vert-fonce, $--clr-vert-pale)
+);
