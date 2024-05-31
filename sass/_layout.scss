@@ -62,7 +62,7 @@ justify-content: center;
     position: relative;
 }
 #evenement{
-    background-color: var(--couleur-arriere-footer);
+    background-color: rgb(223, 142, 138);
     color: var(--couleur-evenement);
     position: relative;
     z-index:2;
@@ -88,7 +88,7 @@ justify-content: center;
     position: relative;
 }
 .contenuPage{
-    background-color: var(--couleur-footer);
+    background-color: var(--couleur-arriere-footer);
     color: var(--couleur-footer);
     position: relative;
 }
