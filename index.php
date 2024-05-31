@@ -19,7 +19,7 @@
     <?php get_header(); ?>
     <div id="entete" class="global">
         <header class="entete__header">
-            <h1> Explorez le monde </h1>
+            <h1> A trans </h1>
             <h2>votre voyage commence ici</h2>
             <h3>TIM-College de Maisonneuve</h3>
             <button><a href="https://www.freecodecamp.org/">Évenements</a></button>
@@ -58,7 +58,7 @@
         </section>
         
     </div>
-    <div id="evenement" class="global diagonal">
+    <div id="evenement" >
         <section>
         <h2>Évenement</h2>
         <h3>On peut enlever singe de la foret mais on peut pas enlever foret de la singe  (h3) Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero adipisci repudiandae ea eius officiis, labore autem sunt dolores voluptatibus quos vitae perspiciatis nostrum nobis est. Doloremque modi nam neque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aliquam corrupti sint recusandae accusantium exercitationem nisi, ipsa eligendi, dicta rerum voluptas consequuntur? Cumque corrupti nisi, dolorum unde in sit aperiam.</h3>

@@ -20,7 +20,7 @@ a{
     display:  flex;
     flex-direction: column;
     align-items: center;
-    justify-content:  space-between;
+    justify-content:  flex-end;
     height: 30vh;
     
  }
@@ -56,18 +56,17 @@ a{
     flex-direction: row;
     justify-content: space-around;
 
-    a {
-        transition: color 0.3s ease;
+ 
+a {
+   transition: color 0.3s ease, transform 0.3s ease;
 
-        &:hover {
-            color:rgb(116, 186, 233);
-        }
-    }
+   &:hover {
+       color:rgb(116, 186, 233);
+       transform: scale(1.1); // scale up by 10% on hover
+   }
+}
 }
 
-p{
-    
-}
 
 
 #errConteneur {

@@ -40,7 +40,7 @@
    
     
         <div id="footer" class="global clr-agencement-secondaire">
-        <?php get_search_form() ?>
+        <?php get_404_template() ?>
         <footer>
             <ul>
     <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-pinterest" viewBox="0 0 16 16">

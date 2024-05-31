@@ -16,9 +16,9 @@ Text Domain: theme-mika
   --largeur-header: 45vw;
   --largeur-footer:25vw;
   /*calcul des couleurs*/
-  --u1:229;
+  --u1:199;
   --u2:calc(var(--u1) + 180);
-  --u3:calc(var(--u2) - 50);
+  --u3:calc(var(--u1) - 50);
   --u4:calc(var(--u1) + 30);
   /* satruation luminosité */
   --s-arriere: 100%;
@@ -296,7 +296,7 @@ body {
 }
 
 #evenement {
-  background-color: var(--couleur-arriere-evenement);
+  background-color: var(--couleur-arriere-footer);
   color: var(--couleur-evenement);
   position: relative;
   z-index: 2;
@@ -380,6 +380,23 @@ p {
   justify-content: space-between;
 }
 
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1.25em;
+  border-left: 5px solid #eee;
+}
+blockquote:before {
+  content: "“";
+  font-size: 2.5em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
 .entete__header {
   background-image: url("images/logo.png");
   background-position-y: top;
@@ -454,7 +471,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 30vh;
 }
 
@@ -484,10 +501,11 @@ ul {
   justify-content: space-around;
 }
 ul a {
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 ul a:hover {
   color: rgb(116, 186, 233);
+  transform: scale(1.1);
 }
 
 #errConteneur {
@@ -561,10 +579,8 @@ a:visited {
   position: absolute;
   content: "";
   inset: 0;
-  background-color: var(--couleur-variable-Diagonal);
   transform: skewY(-5deg);
   opacity: 0.5;
-  z-index: -1;
 }
 
 .destinations, .categories {

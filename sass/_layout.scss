@@ -62,7 +62,7 @@ justify-content: center;
     position: relative;
 }
 #evenement{
-    background-color: var(--couleur-arriere-evenement);
+    background-color: var(--couleur-arriere-footer);
     color: var(--couleur-evenement);
     position: relative;
     z-index:2;
@@ -78,7 +78,7 @@ justify-content: center;
 }
 
 #footer{
-    background-color: var(--couleur-arriere-footer);
+   background-color: var(--couleur-arriere-footer);
     color: var(--couleur-footer);
     position: relative;
 }
@@ -150,3 +150,22 @@ section > h3:hover {
     flex-direction: column;
     justify-content:  space-between;
  }
+
+ blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 1.25em;
+    border-left: 5px solid #eee;
+
+    &:before {
+        content: "\201C"; // open quote
+        font-size: 2.5em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    p {
+        display: inline;
+    }
+}

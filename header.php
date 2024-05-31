@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<div id="menu" class="global  clr-agencement-primaire">
+<div id="menu" class="global  clr-agencement-ternaire">
      <?php   echo get_custom_logo() ?>
         <header class="menu_entete">
             <input type="checkbox" name="" id="chk-burger">

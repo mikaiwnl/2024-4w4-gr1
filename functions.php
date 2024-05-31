@@ -31,3 +31,20 @@ function _4w4_modifie_requete_principale($query)
 }
 add_action('pre_get_posts', '_4w4_modifie_requete_principale');
 
+
+function custom_image_size_for_gallery( $sizes ) {
+
+  return array_merge( $sizes, array(
+
+      'thumbnail' => __('Thumbnail'),
+
+      'medium'    => __('Medium'),
+
+      'large'     => __('Large'),
+
+      'full'      => __('Full Size'),
+
+  ));
+}
+
+add_filter( 'image_size_names_choose', 'custom_image_size_for_gallery' );
