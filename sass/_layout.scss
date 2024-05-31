@@ -82,8 +82,13 @@ justify-content: center;
     color: var(--couleur-footer);
     position: relative;
 }
-.pagePays{
+.mainPage{
     background-color: var(--couleur-arriere-footer);
+    color: var(--couleur-footer);
+    position: relative;
+}
+.contenuPage{
+    background-color: var(--couleur-footer);
     color: var(--couleur-footer);
     position: relative;
 }
