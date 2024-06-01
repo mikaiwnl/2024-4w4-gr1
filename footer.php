@@ -19,7 +19,7 @@
 
                 <li>
                     
-                <a href="https://github.com/mikaiwnl/2024-4w4-gr1/tree/tp2.1" target="_blank"
+                <a href="https://github.com/mikaiwnl/2024-4w4-gr1/tree/tp2.2" target="_blank"
                         rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="#ffffff" class="bi bi-github" viewBox="0 0 16 16">
                             <path
