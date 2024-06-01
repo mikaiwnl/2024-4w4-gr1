@@ -28,7 +28,6 @@
 
             </ul>
 
-
             <blockquote>Bonjour voici mon projet finale pour le cour de 4W4
                 a but du projet , étais de créé une page de voyage avec des destionations differents pour plusieurs
                 catégories différent.

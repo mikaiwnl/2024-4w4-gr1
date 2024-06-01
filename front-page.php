@@ -36,7 +36,7 @@
         <h2>évenement</h2>
         <?php echo do_shortcode('[mika_destination]') ?>
 
-
+                    
 
     </section>
 
